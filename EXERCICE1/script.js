@@ -4,20 +4,20 @@ Notes: The dates are given in the format YYYY
  */
 
 
-const birthYear1 = Number(prompt("entrez la premiere annee d'anniversaire"));
-const birthYear2 = Number(prompt("entrez la deuxieme annee d'anniversaire"));
+const PremièreDateAniv = Number(prompt("entrez la premiere annee d'anniversaire"));
+const DeuxiemeDateAniv = Number(prompt("entrez la deuxieme annee d'anniversaire"));
 
-if (birthYear1 < birthYear2) {
+if (PremièreDateAniv < DeuxiemeDateAniv) {
   // Personne 2 est plus jeune
-  const ageDifference = birthYear2 - birthYear1;
+  const ageDifference = DeuxiemeDateAniv - PremièreDateAniv;
   const halfAge = ageDifference * 2;
-  const halfAgeYear = birthYear1 + halfAge;
+  const halfAgeYear = PremièreDateAniv + halfAge;
   console.log(`Le plus jeune a exactement la moitié de l'âge du plus âgée en ${halfAgeYear}`);
-} else if (birthYear2 < birthYear1) {
+} else if (DeuxiemeDateAniv < PremièreDateAniv) {
   // Personne 1 est plus jeune
-  const ageDifference = birthYear1 - birthYear2;
+  const ageDifference = PremièreDateAniv - DeuxiemeDateAniv;
   const halfAge = ageDifference * 2;
-  const halfAgeYear = birthYear2 + halfAge;
+  const halfAgeYear = DeuxiemeDateAniv + halfAge;
   console.log(`Le plus jeune a exactement la moitié de l'âge du plus âgée en ${halfAgeYear}`);
 } else {
   // Les personnes ont le même âge
